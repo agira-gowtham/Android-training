@@ -1,6 +1,7 @@
 package myapplication.com.sql;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -18,7 +19,7 @@ import static android.R.attr.name;
 public class MainActivity extends AppCompatActivity {
     EditText ed1,ed2,ed3;
 
-    public AppCompatButton b1,b2;
+    public AppCompatButton b1,b2,b3;
     public static final String MyPREFERENCES = "MyPrefs" ;
     public static final String Name = "nameKey";
     public static final String Phone = "phoneKey";
@@ -34,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
         ed3 = (EditText) findViewById(R.id.editext3);
         b1 = (AppCompatButton) findViewById(R.id.button);
         b2=(AppCompatButton) findViewById(R.id.button2);
+        b3 = (AppCompatButton) findViewById(R.id.button3);
+
         sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
 
         b1.setOnClickListener(new View.OnClickListener() {
@@ -83,6 +86,16 @@ public class MainActivity extends AppCompatActivity {
                 }
 
             });
-        
+
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent;
+                intent = new Intent(getApplicationContext(), Main2Activity.class);
+                startActivity(intent);
+
+
+            }
+        });
     }
 }

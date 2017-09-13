@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="myapplication.com.sql.Main2Activity"
+    tools:showIn="@layout/activity_main2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name           :"
+                android:textSize="20sp"
+                android:layout_margin="15sp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_margin="15sp"
+                android:id="@+id/name"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SurName     :"
+                android:textSize="20sp"
+                android:layout_margin="15sp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_margin="15sp"
+                android:id="@+id/surn"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/Add"
+                android:layout_margin="5sp"
+                android:textColor="@android:color/white"
+                android:text="INSERT"
+                android:background="@color/colorPrimary"
+                android:onClick="insertData"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/Retri"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="retrive"
+                android:layout_margin="5sp"
+                android:onClick="readData"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
