@@ -72,6 +72,13 @@
 
 
         </LinearLayout>
-
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/but"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next Task"
+            android:textColor="#8e44ad"
+            android:background="#f39c12"
+            android:layout_gravity="center_horizontal"/>
     </LinearLayout>
 </LinearLayout>
