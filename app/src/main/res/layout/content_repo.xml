@@ -10,7 +10,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:weightSum="1">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -24,8 +25,16 @@
         <ImageView
             android:id="@+id/thumb"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
+            android:layout_height="250dp"
+            android:layout_weight="0.65" />
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Next Page"
+            android:id="@+id/button"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"/>
 
     </LinearLayout>
 

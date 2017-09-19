@@ -4,4 +4,8 @@
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_activity_main">MyApp</string>
     <string name="title_activity_repo">RepoAct</string>
+    <string name="title_activity_recycle">Recycle</string>
+    <string name="title_activity_retro_rage">RetroRage</string>
+    <string name="title_activity_retroimage">Retroimage</string>
+    <string name="title_activity_retrofit1">Retrofit1</string>
 </resources>

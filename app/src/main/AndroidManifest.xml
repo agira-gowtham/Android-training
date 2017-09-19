@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".volley.VolleyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -29,7 +30,16 @@
         <activity
             android:name=".RepoAct"
             android:label="@string/title_activity_repo"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RetroRage"
+            android:label="@string/title_activity_retro_rage"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <activity android:name=".activity.JSONActivity">
+
+        </activity>
     </application>
 
 </manifest>
