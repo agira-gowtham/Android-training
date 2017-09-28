@@ -4,8 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="myapplication.com.sql.activity.JSONActivity">
-
+    tools:context="myapplication.com.sql.activity.JSONActivity"
+    android:orientation="vertical">
+    <view
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></view>
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textSize="20dp"
+        android:id="@+id/nxt"
+        android:background="@color/colorPrimary"
+        />
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"

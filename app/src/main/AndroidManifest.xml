@@ -35,11 +35,9 @@
             android:name=".RetroRage"
             android:label="@string/title_activity_retro_rage"
             android:theme="@style/AppTheme.NoActionBar" />
-
-
-        <activity android:name=".activity.JSONActivity">
-
-        </activity>
+        <activity android:name=".activity.JSONActivity" />
+        <activity android:name=".Email" />
+        <activity android:name=".Webv"></activity>
     </application>
 
 </manifest>

@@ -39,7 +39,7 @@ public class RetroRage extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(),JSONActivity.class);
+                Intent intent=new Intent(getApplicationContext(),Email.class);
                 startActivity(intent);
             }
         });
